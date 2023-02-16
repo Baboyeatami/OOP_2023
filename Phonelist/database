@@ -1,0 +1,68 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.0.18-nt
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema phonebook
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ phonebook;
+USE phonebook;
+
+--
+-- Table structure for table `phonebook`.`info`
+--
+
+DROP TABLE IF EXISTS `info`;
+CREATE TABLE `info` (
+  `idInfo` varchar(10) NOT NULL default '0',
+  `Name` varchar(45) NOT NULL default '',
+  `Number` varchar(45) NOT NULL default '',
+  `UserName` varchar(10) NOT NULL default '',
+  `Pass` varchar(10) NOT NULL default '',
+  `time` time default NULL,
+  `dateX` date default NULL,
+  `picx` blob NOT NULL,
+  PRIMARY KEY  (`idInfo`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='InnoDB free: 4096 kB';
+
+--
+-- Dumping data for table `phonebook`.`info`
+--
+
+/*!40000 ALTER TABLE `info` DISABLE KEYS */;
+INSERT INTO `info` (`idInfo`,`Name`,`Number`,`UserName`,`Pass`,`time`,`dateX`,`picx`) VALUES 
+ ('1','asasd','asdasd','','',NULL,NULL,''),
+ ('1111','asd','aaaaaa','a','asd',NULL,NULL,''),
+ ('12','haha','12','12','haha',NULL,NULL,''),
+ ('222222','jamie hahahahas','aaa','aaa','9999999999',NULL,NULL,''),
+ ('3','gggggggggggggggg','33123','','',NULL,NULL,''),
+ ('4','ljnljlakjs','hhhhhhhhhhhh','','',NULL,NULL,''),
+ ('6','jamie hhhhhhh','','','1',NULL,NULL,''),
+ ('7','jamie','aaaaaaaaaaa','','1',NULL,NULL,''),
+ ('8','jamie','','','1',NULL,NULL,''),
+ ('9','jamie','','','1',NULL,NULL,''),
+ ('989999','gggggggggggggggg','','','33123',NULL,NULL,''),
+ ('CG003','Jamie','Number','','',NULL,NULL,''),
+ ('wwwww','welkjwke','','',';we;rlkwer',NULL,NULL,'');
+/*!40000 ALTER TABLE `info` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
